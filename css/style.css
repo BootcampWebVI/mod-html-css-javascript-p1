@@ -1,7 +1,7 @@
 :root{
     --text-color: black;
     --bg-color: white;
-    
+
 }
 
 /* General styling */
@@ -54,6 +54,30 @@ section>header {
     height: 100vh;
 }
 
+section#home header {
+    background-image: url(../assets/img/home-bg.jpg);
+}
+
+section#whoami header{
+background-image: url(../assets/img/whoami-bg.jpg);
+}
+
+section#studies header{
+    background-image: url(../assets/img/studies-bg.jpg);
+}
+
+section#experience header {
+    background-image: url(../assets/img/experience-bg.jpg);
+}
+
+section#about header {
+    background-image: url(../assets/img/about-bg.jpg);
+}
+
+section#contact header {
+    background-image: url(../assets/img/contact-bg.jpg);
+}
+
 section .title_wrapper {
     position: relative;
     text-align: center;
@@ -80,6 +104,7 @@ section>header h2 {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify;
 }
 
 p {
