@@ -1,16 +1,18 @@
 :root{
     --text-color: black;
     --bg-color: white;
-
+    --aux-color: brown;
 }
 
 /* General styling */
 body {
     font-family:'Nunito Sans', sans-serif;
+    color: var(--text-color);
 }
 
 header {
     font-family: 'Halant', serif;
+    color: var(--bg-color);
 }
 
 /* Page header Styling */
@@ -55,6 +57,7 @@ section>header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-color: var(--aux-color);
     color: var(--bg-color);
 }
 
