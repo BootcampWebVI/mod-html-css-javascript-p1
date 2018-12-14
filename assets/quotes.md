@@ -9,6 +9,6 @@
 
 > Work hard, be kind, and amazing things will happen.
 
-> Get to know me a little better
+> mens sana in corpore sano
 
 > Eloquence is a painting of the thoughts
