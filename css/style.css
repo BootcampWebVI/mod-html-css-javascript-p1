@@ -46,5 +46,13 @@ nav a {
 
 section>header {
     height: 100vh;
+}
+
+section .title_wrapper {
+    position: relative;
     text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 }
