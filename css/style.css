@@ -116,9 +116,13 @@ section>header h2 {
 }
 
 .title_wrapper p{
+    display: inline;
+    padding-right: 3rem;
+    padding-left: 3rem;
     font-size: 1.5rem;
     font-weight: 300;
     font-style: italic;
+    border-bottom: 1px solid white;
 }
 
 /* Content styling */
