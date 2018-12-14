@@ -7,4 +7,31 @@ header {
     font-family: 'Halant', serif;
 }
 
-/* Main header styling */
+/* Page header Styling */
+
+header>h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: inherit;
+    display: block;
+    padding: 0rem 1rem 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
