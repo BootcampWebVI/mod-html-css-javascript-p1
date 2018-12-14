@@ -56,3 +56,14 @@ section .title_wrapper {
     transform: translate(-50%, -50%);
 
 }
+
+section>header h2 {
+    font-size: 4rem;
+    font: weight 700;
+}
+
+.title_wrapper p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+}
