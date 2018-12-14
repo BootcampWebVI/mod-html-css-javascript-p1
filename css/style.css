@@ -41,3 +41,10 @@ nav a {
     font-weight: 700;
     font-size: 0.75rem;
 }
+
+/* Section headers styling */
+
+section>header {
+    height: 100vh;
+    text-align: center;
+}
