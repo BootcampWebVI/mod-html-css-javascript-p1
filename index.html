@@ -121,29 +121,29 @@
             <p>Please feel free to get in touch, fill out the form and I'll get back to you as soon as possible.</p>
             <form action="">
                 <ul>
-                    <li>
+                    <li class="form_field_wrapper">
                         <label for="name">Name</label></li>
-                        <input type="text" name="name" id="name">
-                    <li>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    <li class="form_field_wrapper">
                         <label for="email">Email Address</label></li>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
                     <li>
                         <label for="selection">How did you find me?</label></li>
-                        <select name="selection" id="selection">
+                        <select name="selection" id="selection" aria-placeholder="How did you find me?">
                             <option value="social">Social</option>
                             <option value="personal">Personally</option>
                             <option value="other">Other</option>
                         </select>
 
-                    <li>
+                    <li class="form_field_wrapper">
                         <label for="other">Other</label></li>
-                        <textarea name="other" id="other" cols="30" rows="10"></textarea>
-                    <li>
+                        <textarea name="other" id="other" cols="30" rows="10" placeholder="How did you find me?"></textarea>
+                    <li class="form_field_wrapper">
                         <label for="tel">Phone Number</label></li>
-                        <input type="tel" name="tel" id="tel">
-                    <li>
+                        <input type="tel" name="tel" id="tel" placeholder="Phone Number">
+                    <li class="form_field_wrapper">
                         <label for="msg">Your Message</label></li>
-                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
                     <li>
                         <button type="submit">Send</button>
                     </li>
