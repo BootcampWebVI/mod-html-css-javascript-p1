@@ -4,3 +4,12 @@
     --aux-color: 
 }
 
+/* General styling */
+body {
+    font-family:'Nunito Sans', sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    font-family: 'Halant', serif;
+}
