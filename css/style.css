@@ -14,7 +14,7 @@ header {
     font-family: 'Halant', serif;
 }
 
-/*Header styling ()*/
+/*Header styling (title and navigation elements)*/
 
 .menu-container {
     display: flex;
@@ -31,4 +31,10 @@ header {
     position: absolute;
     right: 0;
     padding: 0.5rem;
+}
+
+/*Contents styling*/
+section>header {
+    display: block;
+    text-align: center;
 }
