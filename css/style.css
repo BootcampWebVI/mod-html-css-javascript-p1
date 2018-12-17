@@ -15,6 +15,26 @@ header {
 }
 
 /*Header styling (title and navigation elements)*/
+header>h1 {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 2rem;
+    right: 1rem;
+    color: var(--bg-color);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--aux-color);
+    overflow-x: hidden;
+    padding-top: 5rem;
+}
 
 .menu-container {
     display: flex;
