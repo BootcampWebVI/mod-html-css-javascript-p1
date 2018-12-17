@@ -1,7 +1,7 @@
 :root {
     --text-color: black;
     --bg-color: white;
-    --aux-color: gray;
+    --aux-color: rgb(241, 141, 9);
 }
 
 /* General styling */
@@ -123,4 +123,48 @@ section .title_wrapper {
 .media_wrapper address {
     text-align: right;
     font-size: 0.7rem;
+}
+
+/*Form styling*/
+.form_field_wrapper label {
+    display: none;
+}
+
+form ::placeholder{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+form ul {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+form li {
+    margin: 1rem 0;
+}
+
+form select {
+    display: block;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--aux-color);
+    padding: 1rem 0;
+    resize: none;
+    font-family: inherit;
+}
+
+form button {
+    width: 100%;
+    border: none;
+    background-color: var(--aux-color);
+    padding: 1rem 0;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--bg-color)
 }
