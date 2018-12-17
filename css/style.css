@@ -33,8 +33,17 @@ header {
     padding: 0.5rem;
 }
 
-/*Contents styling*/
+/*Section headers styling*/
 section>header {
+    position: relative;
     display: block;
+    height: 100vh;
     text-align: center;
+}
+
+section .title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
