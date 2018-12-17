@@ -88,6 +88,19 @@ section .title_wrapper {
     z-index: 1;
 }
 
+.title_wrapper h2 {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.title_wrapper p {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    border-top: 1px solid var(--bg-color);
+    border-bottom: 1px solid var(--bg-color);
+}
+
 /* Contents Styling */
 
 .content_wrapper {
