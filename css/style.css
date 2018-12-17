@@ -36,9 +36,35 @@ header {
 /*Section headers styling*/
 section>header {
     position: relative;
-    display: block;
     height: 100vh;
-    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--bg-color);
+}
+
+#home header {
+    background-image: url(../assets/img/home-bg.jpg);
+}
+
+#whoami header {
+    background-image: url(../assets/img/whoami-bg.jpg);
+}
+
+#studies header {
+    background-image: url(../assets/img/studies-bg.jpg);
+}
+
+#experience header {
+    background-image: url(../assets/img/experience-bg.jpg);
+}
+
+#about header {
+    background-image: url(../assets/img/about-bg.jpg);
+}
+
+#contact header {
+    background-image: url(../assets/img/contact-bg.jpg);
 }
 
 section .title_wrapper {
@@ -46,6 +72,7 @@ section .title_wrapper {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* Contents Styling */
