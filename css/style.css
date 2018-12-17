@@ -13,3 +13,22 @@ body {
 header {
     font-family: 'Halant', serif;
 }
+
+/*Header styling ()*/
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-container li {
+    padding-top: 0.5rem;
+    padding-bottom: .5rem;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 0;
+    padding: 0.5rem;
+}
