@@ -322,6 +322,8 @@ footer address{
 }
 
 @media (min-width: 768px){
+
+    /*A partir de esta resolucion aumentamos el tamaño de los titulos y ajustamos las proporciones del visor de video*/
     .title_wrapper h2 {
         font-size: 7rem;
         line-height: 1;
@@ -330,6 +332,9 @@ footer address{
     
     .title_wrapper p {
         font-size: 1.8rem;
+        height: 100%;
     }
+
+
 }
 
