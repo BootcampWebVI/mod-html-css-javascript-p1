@@ -34,7 +34,7 @@ header>h1 {
 
 .sidenav {
     height: 100%;
-    width: 0; /*Esto se modifica con Js para que aparezca sidenav */
+    width:25%; /*Esto se modifica con Js para que aparezca sidenav */
     position: fixed;
     z-index: 1;
     top: 0;
@@ -66,8 +66,13 @@ header>h1 {
     display: block;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    transition: all 0.1s ease-in;
 }
 
+.menu-container a:hover, .active {
+    color: var(--bg-color);
+    font-size: 1rem;
+}
 
 .menu-icon {
     position: absolute;
