@@ -163,12 +163,14 @@ section .title_wrapper {
 
 .title_wrapper h2 {
     font-size: 3rem;
+    transition: all 0.3s ease;
     line-height: 1;
     margin-bottom: 1rem;
 }
 
 .title_wrapper p {
     font-size: 1.1rem;
+    transition: all 0.3s ease;
     line-height: 1.2;
     border-top: 1px solid var(--bg-color);
     border-bottom: 1px solid var(--bg-color);
@@ -319,5 +321,15 @@ footer address{
 
 }
 
-
+@media (min-width: 768px){
+    .title_wrapper h2 {
+        font-size: 7rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    
+    .title_wrapper p {
+        font-size: 1.8rem;
+    }
+}
 
