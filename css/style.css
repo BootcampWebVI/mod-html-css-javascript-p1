@@ -34,7 +34,7 @@ header>h1 {
 
 .sidenav {
     height: 100%;
-    width:25%; /*Esto se modifica con Js para que aparezca sidenav */
+    width: 0; /*Esto se modifica con Js para que aparezca sidenav */
     position: fixed;
     z-index: 1;
     top: 0;
@@ -135,16 +135,40 @@ section .title_wrapper {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
+    animation: title_animation 0.7s ease-in;
+    animation-fill-mode: forwards;
 }
 
+@keyframes title_animation {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
 .title_wrapper h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1;
     margin-bottom: 1rem;
 }
 
 .title_wrapper p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.2;
     border-top: 1px solid var(--bg-color);
     border-bottom: 1px solid var(--bg-color);
