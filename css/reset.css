@@ -7,12 +7,12 @@ body, h1, h2, h3, p {
     padding: 0;
 }
 
-nav ul, nav li, form ul, form li {
+nav ul, nav li, form ul, form li, footer ul, footer li {
     margin: 0;
     padding: 0; 
 }
 
-nav ul, form ul {
+nav ul, form ul, footer ul {
     list-style: none;
 }
 
