@@ -203,6 +203,7 @@ section .title_wrapper {
 .cv_wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -300,3 +301,23 @@ footer address{
 .social_item {
     flex-grow: 1;
 }
+
+@media (min-width: 480px){
+
+    /* A partir de este tamaño controlaremos el ancho de las "targetas" de la seccion studies para que no se vean demasiado anchas*/
+
+    .cv_wrapper article {
+        flex-grow: initial;
+        width: 9rem;
+    }
+
+    .cv_wrapper article:hover {
+        flex-grow: initial;
+        width: 12rem;
+    }
+    
+
+}
+
+
+
