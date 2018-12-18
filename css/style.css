@@ -1,7 +1,7 @@
 :root {
     --text-color: black;
     --bg-color: white;
-    --aux-color: rgb(241, 141, 9);
+    --aux-color:cornflowerblue;
     --footer-bg-color: lightgray;
 }
 
@@ -151,6 +151,38 @@ section .title_wrapper {
 .media_wrapper address {
     text-align: right;
     font-size: 0.7rem;
+}
+
+/*Studies and formation extra styling*/
+
+.cv_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cv_wrapper article{
+    background-color: var(--aux-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 40%;
+    flex-grow: 1;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    margin: 0.6rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.cv_wrapper article:hover {
+    flex-grow: 3;
+}
+
+.cv_content_wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
 }
 
 /*Form styling*/
