@@ -1,7 +1,7 @@
 :root {
     --text-color: black;
     --bg-color: white;
-    --aux-color:cornflowerblue;
+    --aux-color:goldenrod;
     --footer-bg-color: lightgray;
 }
 
@@ -11,13 +11,13 @@ body {
     color: var(--text-color);
 }
 
-header {
+header, nav{
     font-family: 'Halant', serif;
 }
 
 .main_wrapper {
     position: absolute;
-    left: 0; /*Esto se modifica con js para dar sitio al sidenav*/
+    left: 0; /*Esto se modifica con js para dejar sitio al sidenav*/
     top: 0;
     right: 0;
 }
@@ -42,18 +42,32 @@ header>h1 {
     background-color: var(--aux-color);
     overflow-x: hidden;
     padding-top: 5rem;
+    transition: width 0.3s ease-out;
 }
+
+
 
 .menu-container {
     display: flex;
     flex-direction: column;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+
 }
 
 .menu-container li {
-    padding-top: 0.5rem;
-    padding-bottom: .5rem;
+    margin-top: 0.5rem;
+    margin-bottom: .5rem;
 }
+
+.menu-container a {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 
 .menu-icon {
     position: absolute;
