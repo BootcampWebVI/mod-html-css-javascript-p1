@@ -2,6 +2,7 @@
     --text-color: black;
     --bg-color: white;
     --aux-color: rgb(241, 141, 9);
+    --footer-bg-color: lightgray;
 }
 
 /* General styling */
@@ -194,4 +195,31 @@ form button {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--bg-color)
+}
+
+/*Footer styling (social and copyright)*/
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: var(--footer-bg-color);
+    text-align: center;
+
+}
+
+footer address{
+    font-size: 0.5rem;
+}
+
+.social {
+    display: inline-flex;
+    width: 30%;
+    left: auto;
+    right: auto;
+    flex-direction: row;
+
+}
+
+.social_item {
+    flex-grow: 1;
 }
