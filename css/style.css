@@ -189,15 +189,24 @@ section .title_wrapper {
 }
 
 .media_wrapper {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    width: 100%;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 12rem;
 }
 
 .media_wrapper address {
     text-align: right;
     font-size: 0.7rem;
+}
+
+.media_wrapper iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 /*Studies and formation extra styling*/
@@ -306,7 +315,7 @@ footer address{
 
 @media (min-width: 480px){
 
-    /* A partir de este tamaño controlaremos el ancho de las "targetas" de la seccion studies para que no se vean demasiado anchas*/
+    /* A partir de este tamaño controlaremos el ancho de las "targetas" de la seccion studies para que no se vean demasiado anchas. Tambien ensanchamos el video*/
 
     .cv_wrapper article {
         flex-grow: initial;
@@ -317,13 +326,17 @@ footer address{
         flex-grow: initial;
         width: 12rem;
     }
+
+    .media_wrapper iframe {
+        height: 400px;
+    }
     
 
 }
 
 @media (min-width: 768px){
 
-    /*A partir de esta resolucion aumentamos el tamaño de los titulos y ajustamos las proporciones del visor de video*/
+    /*A partir de esta resolucion aumentamos el tamaño de los titulos, ajustamos las proporciones del visor de video y hacemos que el menu lateral sea siempre visible*/
     .title_wrapper h2 {
         font-size: 7rem;
         line-height: 1;
@@ -333,6 +346,10 @@ footer address{
     .title_wrapper p {
         font-size: 1.8rem;
         height: 100%;
+    }
+
+    .media_wrapper iframe {
+        height: 560px;
     }
 
 
