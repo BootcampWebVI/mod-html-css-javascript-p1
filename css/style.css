@@ -20,6 +20,7 @@ header, nav{
     left: 0; /*Esto se modifica con js para dejar sitio al sidenav*/
     top: 0;
     right: 0;
+    transition: all 0.2s ease-out;
 }
 
 /*Header styling (title and navigation elements)*/
@@ -42,7 +43,7 @@ header>h1 {
     background-color: var(--text-color);
     overflow-x: hidden;
     padding-top: 5rem;
-    transition: width 0.3s ease-out;
+    transition: width 0.2s ease-out;
 }
 
 
@@ -73,7 +74,6 @@ header>h1 {
 .menu-container a:hover, .active {
     color: var(--aux-color);
     border-right: 2px solid var(--aux-color);
-    font-size: 1rem;
 }
 
 .menu-icon {
@@ -163,12 +163,14 @@ section .title_wrapper {
 
 .title_wrapper h2 {
     font-size: 3rem;
+    transition: all 0.3s ease;
     line-height: 1;
     margin-bottom: 1rem;
 }
 
 .title_wrapper p {
     font-size: 1.1rem;
+    transition: all 0.3s ease;
     line-height: 1.2;
     border-top: 1px solid var(--bg-color);
     border-bottom: 1px solid var(--bg-color);
@@ -187,10 +189,10 @@ section .title_wrapper {
 }
 
 .media_wrapper {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    width: 100%;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 12rem;
 }
 
 .media_wrapper address {
@@ -198,11 +200,21 @@ section .title_wrapper {
     font-size: 0.7rem;
 }
 
+.media_wrapper iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
 /*Studies and formation extra styling*/
 
 .cv_wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -300,3 +312,65 @@ footer address{
 .social_item {
     flex-grow: 1;
 }
+
+@media (min-width: 480px){
+
+    /* A partir de este tamaño controlaremos el ancho de las "targetas" de la seccion studies para que no se vean demasiado anchas. Tambien ensanchamos el video*/
+
+    .cv_wrapper article {
+        flex-grow: initial;
+        width: 9rem;
+    }
+
+    .cv_wrapper article:hover {
+        flex-grow: initial;
+        width: 12rem;
+    }
+
+    .media_wrapper iframe {
+        height: 70vh;
+    }
+    
+
+}
+
+@media (min-width: 768px){
+
+    /*A partir de esta resolucion aumentamos el tamaño de los titulos, ajustamos las proporciones del visor de video, restringimos el ancho maximo del formulario de contacto y hacemos que el menu lateral sea siempre visible*/
+
+    .title_wrapper h2 {
+        font-size: 7rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    
+    .title_wrapper p {
+        font-size: 1.8rem;
+        height: 100%;
+    }
+
+    .media_wrapper iframe {
+        height: 560px;
+    }
+
+    form {
+        width: 595px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .main_wrapper {
+        left: 200px;
+    }
+
+    .sidenav {
+        width: 200px;
+    }
+
+
+}
+
