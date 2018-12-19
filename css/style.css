@@ -359,6 +359,10 @@ footer address{
         margin-right: auto;
     }
 
+    .menu-icon {
+        display: none;
+    }
+
     .main_wrapper {
         left: 200px;
     }
