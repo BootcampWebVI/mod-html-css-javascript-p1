@@ -336,7 +336,8 @@ footer address{
 
 @media (min-width: 768px){
 
-    /*A partir de esta resolucion aumentamos el tamaño de los titulos, ajustamos las proporciones del visor de video y hacemos que el menu lateral sea siempre visible*/
+    /*A partir de esta resolucion aumentamos el tamaño de los titulos, ajustamos las proporciones del visor de video, restringimos el ancho maximo del formulario de contacto y hacemos que el menu lateral sea siempre visible*/
+
     .title_wrapper h2 {
         font-size: 7rem;
         line-height: 1;
@@ -350,6 +351,12 @@ footer address{
 
     .media_wrapper iframe {
         height: 560px;
+    }
+
+    form {
+        width: 595px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
