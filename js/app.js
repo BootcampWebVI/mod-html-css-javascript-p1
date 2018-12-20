@@ -1,4 +1,4 @@
-import { menuController } from "menu.js";
+import { menuController } from "./menu.js"
 
 function app() {
     menuController();

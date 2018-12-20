@@ -315,7 +315,7 @@ footer address{
 
 @media (min-width: 480px){
 
-    /* A partir de este tamaño controlaremos el ancho de las "targetas" de la seccion studies para que no se vean demasiado anchas. Tambien ensanchamos el video*/
+    /* A partir de este tamaño controlaremos el ancho de las "targetas" de la seccion studies para que no se vean demasiado anchas. Tambien ensanchamos el video.*/
 
     .cv_wrapper article {
         flex-grow: initial;
@@ -330,11 +330,10 @@ footer address{
     .media_wrapper iframe {
         height: 70vh;
     }
-    
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 850px){
 
     /*A partir de esta resolucion aumentamos el tamaño de los titulos, ajustamos las proporciones del visor de video, restringimos el ancho maximo del formulario de contacto y hacemos que el menu lateral sea siempre visible*/
 
