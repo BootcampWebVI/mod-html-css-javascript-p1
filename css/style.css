@@ -358,7 +358,12 @@ footer address{
         margin-right: auto;
     }
 
-    .menu-icon {
+    /*Aquí se controlaba la responsiveness del menu desde CSS, pero al esconder el menú al clicar el icono usando CSS la query dejaba de funcionar (dejaba de mostrarse y esconderse ell menu al cambiar el tamaño de la ventana del navegador). Así que todo el responsive del menú se ha trasladado a menu.js
+    
+    Lo dejo para facilitar la corrección de la práctica
+    */
+
+    /* .menu-icon {
         display: none;
     }
 
@@ -368,7 +373,7 @@ footer address{
 
     .sidenav {
         width: 200px;
-    }
+    } */
 
 
 }
