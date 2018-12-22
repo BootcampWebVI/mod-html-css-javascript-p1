@@ -17,7 +17,7 @@ header, nav{
 
 .main_wrapper {
     position: absolute;
-    left: 0; /*Esto se modifica con js para dejar sitio al sidenav*/
+    left: 0;
     top: 0;
     right: 0;
     transition: all 0.2s ease-out;
@@ -35,7 +35,7 @@ header>h1 {
 
 .sidenav {
     height: 100%;
-    width: 0; /*Esto se modifica con Js para que aparezca sidenav */
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -44,6 +44,15 @@ header>h1 {
     overflow-x: hidden;
     padding-top: 5rem;
     transition: width 0.2s ease-out;
+}
+
+/* Clases para mostrar y esconder el menu desde Javascript*/
+.sidenav_visible {
+    width: 200px;
+}
+
+.main_wrapper_left {
+    left: 200px;
 }
 
 
