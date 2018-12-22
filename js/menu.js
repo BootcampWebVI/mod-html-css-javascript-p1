@@ -13,24 +13,32 @@ export function setMenu() {
     menuLinks.forEach(link => link.addEventListener('click', function (event) {
         let targetSection = event.target.hash;
         event.preventDefault();
-        debugger
         resetIcon()
         resetNav()
-
-        /*
-        Hay que asegurarse de que no se desplaza la pantalla hasta que el menu esté escondido, si no, dado que la altura de las secciones cambia durante la transicion del menu, el scroll no encaja correctamente el titulo de las secciones.
-        */
-        main.addEventListener('transitionend', function () {
+        
+        if (window.innerWidth >= 768) {
             document.querySelector(`${targetSection} header`).scrollIntoView({
                 behavior: 'smooth'
             })
-        })
-
-        main.addEventListener('mozTransitionEnd', function () {
-            document.querySelector(`${targetSection} header`).scrollIntoView({
-                behavior: 'smooth'
+        //en la version movil es preciso que el scroll espere al repliegue del menu, de lo contrario
+        //el desplazamiento no se calcula correctamente
+        } else {
+            main.addEventListener('transitionend', function () {
+                document.querySelector(`${targetSection} header`).scrollIntoView({
+                    behavior: 'smooth'
+                })
             })
-        })
+
+            main.addEventListener('mozTransitionEnd', function () {
+                document.querySelector(`${targetSection} header`).scrollIntoView({
+                    behavior: 'smooth'
+                })
+            })
+        }
+
+
+
+
 
     }))
 
