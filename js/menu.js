@@ -10,12 +10,26 @@ export function setMenu() {
     let sectionsOffsetArray = [];
 
     /* TODO Smooth scrolling */
-    menuLinks.forEach(link => link.addEventListener('click', function(event){
+    menuLinks.forEach(link => link.addEventListener('click', function (event) {
         let targetSection = event.target.hash;
         event.preventDefault();
-        console.dir(event.target.hash)
-        document.querySelector(`${targetSection} header`).scrollIntoView({
-            behavior: 'smooth'
+        debugger
+        resetIcon()
+        resetNav()
+
+        /*
+        Hay que asegurarse de que no se desplaza la pantalla hasta que el menu esté escondido, si no, dado que la altura de las secciones cambia durante la transicion del menu, el scroll no encaja correctamente el titulo de las secciones.
+        */
+        main.addEventListener('transitionend', function () {
+            document.querySelector(`${targetSection} header`).scrollIntoView({
+                behavior: 'smooth'
+            })
+        })
+
+        main.addEventListener('mozTransitionEnd', function () {
+            document.querySelector(`${targetSection} header`).scrollIntoView({
+                behavior: 'smooth'
+            })
         })
 
     }))
@@ -68,7 +82,7 @@ export function setMenu() {
 
 
     /*TODO Repliegue del menu controlado con icono*/
-    
+
     window.addEventListener('resize', resizeMenuController)
     menuIcon.addEventListener('click', menuIconController)
 
