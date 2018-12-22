@@ -5,8 +5,20 @@ export function setMenu() {
     let menuIcon = document.querySelector('.menu-icon')
 
     let menuElements = document.querySelectorAll('nav li')
+    let menuLinks = document.querySelectorAll('nav a')
     let pageSections = document.querySelectorAll('section')
     let sectionsOffsetArray = [];
+
+    /* TODO Smooth scrolling */
+    menuLinks.forEach(link => link.addEventListener('click', function(event){
+        let targetSection = event.target.hash;
+        event.preventDefault();
+        console.dir(event.target.hash)
+        document.querySelector(`${targetSection} header`).scrollIntoView({
+            behavior: 'smooth'
+        })
+
+    }))
 
     /* TODO Scrollspy */
 
