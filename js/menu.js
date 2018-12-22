@@ -44,11 +44,6 @@ export function setMenu() {
             currentMenuElement = 5
         }
 
-
-        console.log(sectionsOffsetArray)
-        console.log(currentMenuElement, currentOffset)
-        console.log(menuElements)
-
         menuElements.forEach(element => element.classList.remove('active'))
         menuElements[currentMenuElement].classList.add('active')
 
@@ -61,7 +56,9 @@ export function setMenu() {
         })
     }
 
+
     /*TODO Repliegue del menu controlado con icono*/
+    
     window.addEventListener('resize', resizeMenuController)
     menuIcon.addEventListener('click', menuIconController)
 
