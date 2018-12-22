@@ -12,7 +12,7 @@ export function setForm() {
 
     function messageLengthController(event){
         const BACKSPACE_CODE = 8;
-        if (getTextAreaLengthInWords() > 5 && event.keyCode != BACKSPACE_CODE) {
+        if (getTextAreaLengthInWords() > 150 && event.keyCode != BACKSPACE_CODE) {
             event.preventDefault()
         }
     }
