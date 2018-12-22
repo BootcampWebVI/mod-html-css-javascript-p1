@@ -46,15 +46,6 @@ header>h1 {
     transition: width 0.2s ease-out;
 }
 
-/* Clases para mostrar y esconder el menu desde Javascript*/
-.sidenav_visible {
-    width: 200px;
-}
-
-.main_wrapper_left {
-    left: 200px;
-}
-
 
 
 .menu-container {
@@ -89,6 +80,15 @@ header>h1 {
     position: absolute;
     right: 0;
     padding: 0.5rem;
+}
+
+/* Clases para mostrar y esconder el menu desde Javascript*/
+.sidenav_visible {
+    width: 200px;
+}
+
+.main_wrapper_left {
+    left: 200px;
 }
 
 /*Section headers styling*/
