@@ -25,7 +25,6 @@ export function setMenu() {
 
     function resizeMenuController() {
         if (window.innerWidth >= 850) {
-            // showNav()
             resetIcon()
             resetNav()
         }
