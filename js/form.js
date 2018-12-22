@@ -11,9 +11,9 @@ export function setForm() {
 
     /* TODO Mostrar el mensaje opcional solamente cuando la opcion pertinente se encuentra seleccionada*/
 
-    function optionalMessageController(){
+    function optionalMessageController() {
         console.log(optionalMessage)
-        if(this.value == 'other'){
+        if (this.value == 'other') {
             optionalMessage.classList.remove('hide')
         } else {
             optionalMessage.classList.add('hide')
@@ -26,18 +26,25 @@ export function setForm() {
     function formController(event) {
         event.preventDefault()
 
+        console.log(optionalMessage.classList.contains('hide'))
+
         user.name = document.querySelector('#name').value
         user.email = document.querySelector('#email').value
         user.howMetMe = getSelection(document.querySelector('#selection'))
-        user.other = document.querySelector('#other').value
         user.tel = document.querySelector('#tel').value
         user.msg = document.querySelector('#msg').value
+
+        if (!optionalMessage.classList.contains('hide')) {
+            user.other = optionalMessage.value
+        }
+
+        
 
         console.table(user)
 
     }
 
-    function getSelection(selector){
+    function getSelection(selector) {
         return selector[selector.selectedIndex].value
     }
 
