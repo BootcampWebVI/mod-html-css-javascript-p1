@@ -11,8 +11,6 @@ export function setMenu() {
     /* TODO Scrollspy */
 
     setSectionsOffsetArray();
-    console.log(sectionsOffsetArray)
-    console.log(menuElements)
 
 
     window.addEventListener('scroll', scrollSpyController)
