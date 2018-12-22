@@ -8,24 +8,35 @@ export function setMenu() {
     menuIcon.addEventListener('click', menuIconController)
 
     function menuIconController() {
-        
+        toggleNav()
+        toggleIcon()
+    }
+
+    function toggleIcon() {
+        menuIcon.classList.toggle('fa-times')
+        menuIcon.classList.toggle('fa-bars')
+    }
+
+    function resetIcon() {
+        menuIcon.classList.remove('fa-times')
+        menuIcon.classList.add('fa-bars')
     }
 
 
     function resizeMenuController() {
         if (window.innerWidth >= 850) {
-            showNav()
-        } else {
-            hideNav()
+            // showNav()
+            resetIcon()
+            resetNav()
         }
     }
 
-    function showNav() {
-        sideNav.classList.add('sidenav_visible')
-        main.classList.add('main_wrapper_left')
+    function toggleNav() {
+        sideNav.classList.toggle('sidenav_visible')
+        main.classList.toggle('main_wrapper_left')
     }
 
-    function hideNav() {
+    function resetNav() {
         sideNav.classList.remove('sidenav_visible')
         main.classList.remove('main_wrapper_left')
     }
