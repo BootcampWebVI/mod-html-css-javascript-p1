@@ -28,6 +28,10 @@ header, nav{
     display: none;
 }
 
+.rounded {
+    border-radius: 50%;
+}
+
 /*Header styling (title and navigation elements)*/
 header>h1 {
     position: absolute;
@@ -192,6 +196,14 @@ section .title_wrapper {
 }
 
 /* Contents Styling */
+
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 40%;
+
+}
 
 .content_wrapper {
     width: 80%;
