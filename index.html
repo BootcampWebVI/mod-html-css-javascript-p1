@@ -135,15 +135,15 @@
                     <ul>
                         <li class="form_field_wrapper">
                             <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
                         </li>
                         <li class="form_field_wrapper">
                             <label for="email">Email Address</label>
-                            <input type="email" name="email" id="email" placeholder="Email Address">
+                            <input type="email" name="email" id="email" placeholder="Email Address" required>
                         </li>
                         <li>
                             <label for="selection">How did you find me?</label>
-                            <select name="selection" id="selection" aria-placeholder="How did you find me?">
+                            <select name="selection" id="selection" aria-placeholder="How did you find me?" required>
                                 <option value="none"></option>
                                 <option value="social">Social</option>
                                 <option value="personal">Personally</option>
@@ -160,7 +160,7 @@
                         </li>
                         <li class="form_field_wrapper">
                             <label for="msg">Your Message</label>
-                            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message" required></textarea>
                         </li>
                         <li>
                             <button type="submit">Send</button>
