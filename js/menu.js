@@ -44,7 +44,7 @@ export function setMenu() {
 
     /* TODO Scrollspy */
 
-    setSectionsOffsetArray();
+    setSectionsOffsetArray()
 
 
     window.addEventListener('scroll', scrollSpyController)
